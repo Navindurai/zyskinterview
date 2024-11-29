@@ -1,0 +1,168 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  padding: 40px 20px; /* Added padding for better spacing on smaller screens */
+}
+
+.image-container{
+  display: flex;
+}
+.image1{
+  position: absolute;
+  margin-top: 100px;
+  /* left: 10px; */
+  left: 230px;
+}
+
+/* Features Header */
+.features-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.features-header p {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  max-width: 800px; /* Restricts line length on larger screens for readability */
+  margin: 0 auto; /* Centers text on smaller screens */
+}
+
+/* Container for Cards */
+.containerone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* Individual Card */
+.card {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 360px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow for a card effect */
+  transition: transform 0.2s ease; /* Adds hover animation */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Moves card up slightly on hover */
+}
+
+/* Card Header */
+.card-header {
+  margin-bottom: 20px;  
+}
+
+.card-header img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Card Body */
+.card-body {
+  margin-bottom: 20px;
+}
+
+.card-body h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.card-body p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #777;
+  max-width: 320px; /* Restricts text width for better readability */
+  margin: 0 auto;
+}
+
+/* Learn More Button */
+.learn-more {
+  display: inline-block;
+  padding: 8px 16px;
+  color: #673AB7;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.learn-more:hover {
+  background-color: #673AB7;
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .features-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .features-header p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Cards will take up full width on mobile */
+  }
+
+  .features-header h2 {
+    font-size: 2rem;
+  }
+
+  .features-header p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .features-header p {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .card-body h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+  }
+
+  .learn-more {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}

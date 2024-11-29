@@ -1,0 +1,163 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footercontainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+/* Footer Headers */
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1; /* Ensures columns take up equal space */
+  min-width: 150px;
+}
+
+.column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Optional New Badge */
+.new {
+  background-color: #77dd77;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  color: #fff;
+  margin-left: 5px;
+}
+
+/* Footer Line Separator */
+.line {
+  border: 1px solid rgb(239, 239, 239);
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Footer Bottom Section */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.logo h1 {
+  font-size: 12px;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 40px;
+}
+
+/* Button */
+.fill-hug-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive Design for Medium and Small Screens */
+@media (max-width: 1024px) {
+  .headers {
+    gap: 15px;
+  }
+
+  .column {
+    min-width: 200px; /* Slightly wider columns on tablets */
+  }
+
+  .logo h1 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headers {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logos {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+
+  .copyright {
+    margin-bottom: 20px;
+  }
+
+  .fill-hug-btn {
+    margin-top: 20px;
+  }
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 480px) {
+  .column h3 {
+    font-size: 1rem;
+  }
+
+  .column li {
+    font-size: 0.85rem;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+  }
+
+}
+
