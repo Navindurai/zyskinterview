@@ -161,3 +161,82 @@
 
 }
 
+/* Small Screen Adjustments (max-width: 480px) */
+@media (max-width: 480px) {
+  
+  /* Adjust the layout of the headers */
+  .headers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Two columns */
+    grid-template-rows: auto auto;  /* Two rows, with automatic height */
+    gap: 20px; /* Space between items */
+     /* Center the content */
+    width: 100%; /* Ensure headers do not overflow */
+    padding: 10px; /* Padding to prevent overflow */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+  }
+
+  /* Adjust the font sizes in columns for better fit */
+  .column h3 {
+    font-size: 1rem;
+  }
+
+  .column li {
+    font-size: 0.85rem;
+  }
+
+  /* Adjust copyright font size */
+  .copyright {
+    font-size: 0.75rem;
+  }
+
+  /* Ensure the footer is properly aligned */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%; /* Ensure footer spans full width */
+    box-sizing: border-box; /* Prevent overflow */
+  }
+
+  /* Adjust the logo section */
+  .footer .logos {
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 100%; /* Ensure logos don't overflow */
+  }
+
+  .footer .logos img {
+    width: 25px;
+    margin-right: 8px;
+  }
+
+  /* Adjust copyright placement and font size */
+  .footer .copyright {
+    font-size: 0.8rem;
+    margin-top: 15px;
+  }
+
+  /* Adjust button size for small screens */
+  .fill-hug-btn {
+    margin-top: 20px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    width: 100%; /* Ensure button fits inside the screen */
+    box-sizing: border-box;
+  }
+
+  /* Optional: Adjust the "New" badge size for mobile */
+  .new {
+    font-size: 0.75rem;
+    padding: 2px 5px;
+    margin-left: 5px;
+  }
+}
+
+
+
+
+

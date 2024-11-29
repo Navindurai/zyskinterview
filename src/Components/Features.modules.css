@@ -166,3 +166,29 @@
     font-size: 0.9rem;
   }
 }
+
+
+@media (max-width: 768px) {
+  .image2 {
+    padding: 10px; 
+  }
+
+  .image {
+    width: 80%; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .image2 {
+    padding: 5px; 
+  }
+
+  .image {
+    width: 100%; 
+  }
+}
+
+
+
+

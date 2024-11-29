@@ -10,7 +10,9 @@ import logo4 from "../assets/Logomark (4).png"
 
 import logo5 from "../assets/Logomark (5).png"
 import logo6 from "../assets/Logomark (6).png"
- import navlogo from "../assets/Logomark.png"
+import navlogo from "../assets/Logomark.png"
+
+ import { AiOutlinePlayCircle } from "react-icons/ai";
 
 
 
@@ -19,36 +21,42 @@ import logo6 from "../assets/Logomark (6).png"
 const Home = () => {
   return (
     <div className="containers">
-      {/* Navbar */}
-      <header className="navbar">
-        <div className="navbar-left">
-        <div className="navlogos">
-          <img src={navlogo} alt="navlogo" />
-          <span>Untitled UI</span>
-        </div>
-          {/* <div className="brand">Untitled UI</div> */}
-          <nav className="nav-links">
-            <a href="/">Home</a>
-            <a href="/">Products</a>
-            <a href="/">Resources</a>
-            <a href="/">Pricing</a>
-          </nav>
-        </div>
-        <div className="navbar-right">
-          <img
-            src={profile}
-            alt="Profile"
-            className="profile-img"
-          />
-        </div>
-      </header>
+  
+  <header className="navbar">
+  <div className="navbar-left">
+    <div className="navlogos">
+      <img src={navlogo} alt="navlogo" />
+      <span>Untitled UI</span>
+    </div>
 
-      {/* Main Content */}
+
+    <button className="hamburger">
+      &#9776; 
+    </button>
+
+   
+    <nav className="nav-links">
+      <a href="/">Home</a>
+      <a href="/"><select id='pro'><option>Products</option></select></a>
+      <a href="/"><select id='pro'><option>Resources</option></select></a>
+      <a href="/">Pricing</a>
+    </nav>
+  </div>
+
+ 
+  <div className="navbar-right">
+    <img src={profile} alt="Profile" className="profile-img" />
+  </div>
+</header>
+
+
+
       <main className="main-content">
-        <div className="new-feature-tag">New feature</div>
-        <div className="new-feature">Check out the team dashboard →
-       
+        <div className="out">
+            <div className="new-feature-tag">New feature</div>
+            <div className="new-feature">Check out the team dashboard → </div>
        </div>
+       
       
         <h1 className="heading">
           Beautiful analytics to grow smarter
@@ -58,13 +66,10 @@ const Home = () => {
         </p>
 
         <div className="button-group">
-          {/* <button className="btn-demo"><img src={playcircle} 
-          alt="playcircle" className='playcircle' /> Demo
-          </button> */}
+    
 
-<button class="buttonsplay">
-  <span class="play-button">▶</span>
-  Demo
+<button class="buttonsplay" >
+<AiOutlinePlayCircle  size={23} /><span className='un'>Demo</span>
 </button>
            <button className="btn-signup">Sign up</button>
         </div>

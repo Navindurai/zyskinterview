@@ -9,8 +9,8 @@ const Testimonial =()=>{
       <div className="testmoniallogo">
         <img src={Sisyphuslogo} alt="Sisyphus logo" />
       </div>
-      <p className="testimonial">
-      We’ve been using Untitled to kick start every new project and can’t imagine working without it.
+       <p className="testimonial">
+          We’ve been using Untitled to kick start every new project and can’t imagine working without it.
         </p>
       <div className="author">
         <img src={CandiceWu} alt="Candice Wu" className="author-image" />

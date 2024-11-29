@@ -9,15 +9,15 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div>
-<Home/>
-<Contents/>
-<Testimonial/>
-<Features/>
-<FAQ/>
- <Blog/> 
-<Footer/>
-    </div>
+        <>
+             <Home/>
+             <Contents/>
+             <Testimonial/>
+             <Features/>
+             <FAQ/>
+             <Blog/> 
+             <Footer/>
+        </>
   );
 }
 

@@ -306,3 +306,90 @@ h1 {
     width: 100%;
   }
 }
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 480px) {
+  /* Blog container padding adjustment */
+  .blogcontainer {
+    padding: 10px;
+  }
+
+  /* Header text alignment */
+  .header {
+    align-items: center;
+  }
+
+  /* Font size adjustments for smaller screens */
+  .title {
+    font-size: 0.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  /* Post image size adjustment */
+  .post-image {
+    height: 100px;  /* Adjust image height */
+  }
+
+  /* Post footer column arrangement */
+  .post-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Author section alignment on mobile */
+  .post-author {
+    flex-direction: column;
+  }
+
+  /* Button size and padding adjustments */
+  .view-all-posts {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  /* Freecontainer adjustments for mobile */
+  .freecontainer {
+    padding: 50px 10px;
+  }
+
+  /* Font sizes in freecontainer */
+  .freecontainer h1 {
+    font-size: 1.8rem;
+  }
+
+  .freecontainer p {
+    font-size: 1rem;
+  }
+
+  /* Button group adjustment on mobile */
+  .buttons {
+    flex-direction: column;
+    gap: 10px; /* Adjust the gap between buttons */
+  }
+
+  /* Button hover adjustments for mobile */
+  .startbutton > .btn {
+    background-color: #700be3;
+    color: white;
+  }
+
+  .startbutton > .btn:hover {
+    background-color: #5907b7;
+  }
+
+  .btn {
+    padding: 8px 15px; /* Adjust padding for mobile */
+    font-size: 0.9rem; /* Adjust font size for mobile buttons */
+  }
+}
+
+
+
+
